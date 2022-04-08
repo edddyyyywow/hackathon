@@ -128,6 +128,9 @@ ul {
 .default-color {
     color: var(--subfont);
 }
+.main-color {
+    color: #fd2182;
+}
 .dark-div {
     background-color: var(--div);
     color: white;

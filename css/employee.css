@@ -16,7 +16,7 @@
     background-color: var(--nav);
 }
 .Logo img {
-    width: 60px;;
+    width: 80px;;
 }
 .SideContainer {
     display: flex;
@@ -47,12 +47,13 @@
     font-size: 0.85rem;
     font-weight: 500;
     
-    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Change the link color to #111 (black) on hover */
 .Navigation li a:hover {
     color: white;
+    transform: scale(1.05);
 }
 
 .UserLogout {
@@ -66,18 +67,154 @@ table {
     border-collapse: collapse;
     width: 100%;
     background-color: var(--div);
-    border-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
   
-tr {
+th {
+    padding: 30px 10px 30px 50px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.66);
+   
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: solid 1px #d73b3f;
+}
+td {
     /* border: solid 1px red; */
+    padding: 20px 10px 20px 50px;
+    font-weight: 300;
     color: white;
-    font-weight: 100;
+}
+.Pagination {
+    display: flex;
+    justify-content: center;
+
+}
+.center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: var(--subfont);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    margin: 0 4px;
+    font-weight: 600;
+  }
+  
+  .pagination a.active {
+    background-color: var(--font);
+    color: white;
+
+  }
+
+.containerOne {
+    background-color: var(--div) !important;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    /* border: solid 1px red; */
+}
+.FormSignIn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+input {
+    background-color: var(--div);
+    border: solid .5px var(--subfont);
+    border-radius: 4px;
+    width: 60%;
+    /* transition: border .5s ease-in-out; */
+}
+input[type=text], input[type=password]  {
+    padding: 12px 20px 12px 20px;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+input[type=text]:focus, input[type=password]:focus{
+    border: 2px solid var(--font);
 }
 
-td, th {
+
+.containerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     /* border: solid 1px red; */
-    padding: 15px;
-    font-weight: 400;
-    font-size: 15px;
+    height: 100vh;
 }
+
+.signbtn {background-image: linear-gradient(to right, #853594 0%, #d73b3f  51%, #9a377f  100%)}
+.signbtn {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   border: none;
+ }
+
+ .signbtn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .SignOut {background-image: linear-gradient(to right, #853594 0%, #d73b3f  51%, #9a377f  100%)}
+.SignOut {
+   margin: 10px;
+   padding: 10px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   border: none;
+   font-size: 14px;
+ }
+
+ .SignOut:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ .CreateButton {background-image: linear-gradient(to left, #853594 0%, #d73b3f  51%, #9a377f  100%); }
+ .CreateButton i {
+     margin-right:15px;
+ }
+ .CreateButton {
+   padding: 10px 30px;
+   text-align: center;
+   transition: background-position 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   border: none;
+   font-size: 14px;
+   display: flex;
+ }
+ .CreateButton:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ .CreateButton i {
+     font-size: 20px;
+ }
